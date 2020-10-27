@@ -1,3 +1,3 @@
-exports.index = function(req, res){
-  res.render('index', { name: 'AndyGeek' });
+exports.index = function (req, res) {
+  res.render("App", { name: "AndyGeek" });
 };
