@@ -1,3 +1,8 @@
-exports.index = function (req, res) {
-  res.render("App", { name: "AndyGeek" });
-};
+const express = require("express");
+const router = express.Router();
+
+router.get("/", function (req, res) {
+  res.render("HomePage", { name: "AndyGeeek" });
+});
+
+module.exports = router;
